@@ -1,5 +1,5 @@
 
 public interface Precio {
 	
-	public String generaSalida(String salida);
+	public double calcular_total(int cantidad_vendida,int dinero_unidad);
 }

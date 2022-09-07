@@ -24,6 +24,7 @@ public class Videojuego implements Precio{
 
 	public double calcular_total(int cantidad_vendida, int dinero_unidad) {
 		
+	
 		double valor_total = cantidad_vendida * dinero_unidad;
 		
 		return valor_total;

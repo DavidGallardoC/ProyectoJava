@@ -14,7 +14,7 @@ public class Main {
 		Videojuego v1 = new Videojuego("Dark Souls 3",70000,50,"RPG de acción ",2016);
 		Videojuego v2 = new Videojuego("Fifa 2022",100000,55,"Deportes ",2022);
 		Videojuego v3 = new Videojuego("Mario Bros",120000,15,"Rayman Adventures ",1985);
-		Videojuego v4 = new Videojuego("League of Legends",6000000,55,"Deportes ",2022);
+		Videojuego v4 = new Videojuego("Horizon",50000,40,"rol",2015);
 		
 		
 		String salida1 = v1.toString();

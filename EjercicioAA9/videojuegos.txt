@@ -1,0 +1,5 @@
+Videojuego: Título=Dark Souls 3, cantidad_vendida:70000, total recaudado=3500000.0
+Videojuego: Título=Fifa 2022, cantidad_vendida:100000, total recaudado=5500000.0
+Videojuego: Título=Mario Bros, cantidad_vendida:120000, total recaudado=1800000.0
+Videojuego: Título=Horizon, cantidad_vendida:50000, total recaudado=2000000.0
+

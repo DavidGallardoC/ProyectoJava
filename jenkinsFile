@@ -1,6 +1,7 @@
+import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+
 
 Date date = new Date();
 DateFormat dateFormat=new SimpleDateFormat("dd/MM/yyyy");
@@ -14,7 +15,7 @@ pipeline {
                 script{
                   if(date.getDay() == 4){
                         println "Hoy es " + fecha
-                        println "¿Cuántos programadores hacen falta para cambiar una bombilla? – Ninguno, porque es un problema de hardware."
+                        println "¿Que es un terapeuta? – 1024 Gigapeutas."
                   }                  
                 }
             }
@@ -25,7 +26,7 @@ pipeline {
                 script{
                   if(date.getDay() == 5){
                         println "Hoy es " + fecha
-                        println "Una vez, Batman disparó a un tiovivo y consiguió un tío muerto."
+                        println "Que son 4 negros en un coche rojo? Un KitKat"
                   }                  
                 }
             }
@@ -36,7 +37,7 @@ pipeline {
                 script{
                   if(date.getDay() == 1){
                         println "Hoy es " + fecha
-                        println "-¿Cómo se llama el peor jugador japonés? -Nikito Nitoko."
+                        println "Por qué Messi no bautiza a su hijo? -Para no hacerse Cristiano."
                   }                  
                 }
             }
@@ -47,7 +48,7 @@ pipeline {
                 script{
                   if(date.getDay() == 2){
                         println "Hoy es " + fecha  
-                        println "«Y tú más» -Breve resumen de la política española sobre el partido gobernante y la oposición."
+                        println "¿Por qué los políticos son una prueba de la reencarnación? -Porque nadie puede hacerse tan retorcido en una sola vida"
                   }                  
                 }
             }
@@ -58,7 +59,7 @@ pipeline {
                 script{
                   if(date.getDay() == 3){
                         println "Hoy es " + fecha
-                        println "– Doctor todo el mundo me ignora– Que pase el siguiente por favor."
+                        println  "Doctor, doctor, ¿qué tal ha salido la operación, Pero qué doctor ni que ocho cuartos! ¡Mire Ud. yo soy San Pedro!"
                   }                  
                 }
             }

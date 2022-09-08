@@ -10,14 +10,14 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		//Generacion del txt
-		File doc = new File("top20_mejores_peliculas.txt");
+		File documento = new File("top20_mejores_peliculas.txt");
 		File docLeer = new File("Peliculas_11_20.txt");
 		try {
-			if(doc.exists()) {
-				doc.delete();
+			if(documento.exists()) {
+				documento.delete();
 			}
-			doc.createNewFile();
-			FileWriter fw = new FileWriter(doc, true);
+			documento.createNewFile();
+			FileWriter fw = new FileWriter(documento, true);
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write("Las 20 mejores peliculas de la historia son: \r\n");
 			bw.write("Nombre:                                  Worldwide Lifetime Gross\r\n");
@@ -50,7 +50,7 @@ public class Principal {
 		//Leer archivo txt	
 
 		try {
-			Scanner sc = new Scanner(doc);
+			Scanner sc = new Scanner(documento);
 			while (sc.hasNextLine()) {
 				String pelicula = sc.nextLine();
 				System.out.println(pelicula);

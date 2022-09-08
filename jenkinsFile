@@ -13,8 +13,8 @@ pipeline {
                 script{
                   if(date.getDay() == 4){
                     LocalDate fecha = LocalDate.now()
-                    println 'Hoy es ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
-                    println "¿Que es un terapeuta? 1024 Gigapeutas."
+                    println 'Fecha actual ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
+                    println "Hoy es jueves. ¿Que es un terapeuta? 1024 Gigapeutas."
                   }                  
                 }
             }
@@ -24,7 +24,9 @@ pipeline {
             steps {
                 script{
                   if(date.getDay() == 5){
-                    println "Esto es un hombre que se sento en un acha,no te ha echo gracia? Pues el se partio el culo."
+                    LocalDate fecha = LocalDate.now()
+                    println 'Fecha actual ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
+                    println "Hoy es viernes. Esto es un hombre que se sento en un acha,no te ha echo gracia? Pues el se partio el culo."
                   }                  
                 }
             }
@@ -34,7 +36,9 @@ pipeline {
             steps {
                 script{
                   if(date.getDay() == 1){
-                    println "Por que Messi no bautiza a su hijo? Para no hacerse Cristiano."
+                    LocalDate fecha = LocalDate.now()
+                    println 'Fecha actual ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
+                    println "Hoy es lunes. Por que Messi no bautiza a su hijo? Para no hacerse Cristiano."
                   }                  
                 }
             }
@@ -44,7 +48,9 @@ pipeline {
             steps {
                 script{
                   if(date.getDay() == 2){
-                    println "«Y tu mas» -Breve resumen de la politica española sobre el partido gobernante y la oposicion."
+                    LocalDate fecha = LocalDate.now()
+                    println 'Fecha actual ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
+                    println "Hoy es miercoles. Y tu mas -Breve resumen de la politica española sobre el partido gobernante y la oposicion."
                   }                  
                 }
             }
@@ -54,7 +60,9 @@ pipeline {
             steps {
                 script{
                   if(date.getDay() == 3){
-                    println "- Doctor, doctor, ¿que tal ha salido la operacion? - ¡Pero que doctor ni que ocho cuartos! ¡Mire Ud. yo soy San Pedro!"
+                    LocalDate fecha = LocalDate.now()
+                    println 'Fecha actual ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
+                    println "Hoy es miercoles.  Doctor, doctor, ¿que tal ha salido la operacion? - ¡Pero que doctor ni que ocho cuartos! ¡Mire Ud. yo soy San Pedro!"
                   }                  
                 }
             }

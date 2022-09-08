@@ -1,82 +1,59 @@
-import java.time.LocalDate
-def fecha = new LocalDate.now()
-pipeline 
-{
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+Date date = new Date();
+DateFormat dateFormat=new SimpleDateFormat("dd/MM/yy");
+pipeline {
     agent any
 
     stages {
-        stage('lunes') 
-        {
-            steps
-            {
-                script
-                {
-                def num1 = 5
-                def num2 = 4
-                
-                println("La suma de " + num1 + " y " + num2 + " es " + (num1+num2))
-                
-                
+        stage('informaticos') {
+            steps {
+                script{
+                  if(date.getDay() == 4){
+                    println "Chiste de informático"
+                  }                  
+                }
+            }
+        }  
+      
+      stage('humor negro') {
+            steps {
+                script{
+                  if(date.getDay() == 5){
+                    println "Chiste de humor negro"
+                  }                  
                 }
             }
         }
-        stage('martes') 
-        {
-            steps
-            {
-                script
-                {
-                def num1 = 5
-                def num2 = 4
-                
-                println("La resta de " + num1 + " y " + num2 + " es " + (num1-num2))
-                
-                
+      
+      stage('futbol') {
+            steps {
+                script{
+                  if(date.getDay() == 1){
+                    println "Chiste de fútbol"
+                  }                  
                 }
             }
         }
-        stage('miercoles') 
-        {
-            steps
-            {
-                script
-                {
-                def num1 = 5
-                def num2 = 4
-                
-                println("La multiplicación de " + num1 + " y " + num2 + " es " + (num1*num2))
-                
-                
+      
+      stage('politica') {
+            steps {
+                script{
+                  if(date.getDay() == 2){
+                    println "Chiste de politica"
+                  }                  
                 }
             }
         }
-          stage('jueves') 
-        {
-            steps
-            {
-                script
-                {
-                def num1 = 5
-                def num2 = 4
-                
-                println("La multiplicación de " + num1 + " y " + num2 + " es " + (num1*num2))
-                
-                
-                }
-            }
-        }
-        stage('viernes') 
-        {
-            steps
-            {
-                script
-                {
-                def num1 = 5
-                def num2 = 4
-                
-                println("La división de " + num1 + " y " + num2 + " es " + (num1/num2))
-                
-                
+      
+      stage('medicos') {
+            steps {
+                script{
+                  if(date.getDay() == 3){
+                    println "Chiste de médicos"
+                  }                  
                 }
             }
         }

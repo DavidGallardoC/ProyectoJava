@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script{
                 println fecha.getDayOfWeek()
-                  if(fecha.getDayOfWeek() == THURSDAY){
+                  if(fecha.getDayOfWeek() == 'THURSDAY'){
                     println 'Fecha actual ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
                     println "Hoy es jueves. ¿Que es un terapeuta? 1024 Gigapeutas."
                   }                  

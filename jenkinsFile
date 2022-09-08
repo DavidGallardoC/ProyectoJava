@@ -1,9 +1,11 @@
+import java.time.LocalDate
+def fecha = new LocalDate.now()
 pipeline 
 {
     agent any
 
     stages {
-        stage('suma') 
+        stage('lunes') 
         {
             steps
             {
@@ -18,7 +20,7 @@ pipeline
                 }
             }
         }
-        stage('resta') 
+        stage('martes') 
         {
             steps
             {
@@ -33,7 +35,7 @@ pipeline
                 }
             }
         }
-        stage('multiplicacion') 
+        stage('miercoles') 
         {
             steps
             {
@@ -48,7 +50,22 @@ pipeline
                 }
             }
         }
-        stage('division') 
+          stage('jueves') 
+        {
+            steps
+            {
+                script
+                {
+                def num1 = 5
+                def num2 = 4
+                
+                println("La multiplicación de " + num1 + " y " + num2 + " es " + (num1*num2))
+                
+                
+                }
+            }
+        }
+        stage('viernes') 
         {
             steps
             {

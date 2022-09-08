@@ -1,14 +1,13 @@
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.text.DateFormat;
 import java.util.Date;
 
 Date date = new Date();
-DateFormat dateFormat=new SimpleDateFormat("dd/MM/yy");
 pipeline {
     agent any
 
     stages {
-        stage('informaticos') {
+        stage('chiste_Informaticos') {
             steps {
                 script{
                   if(date.getDay() == 4){
@@ -18,7 +17,7 @@ pipeline {
             }
         }  
       
-      stage('humor negro') {
+      stage('chiste_HumorNegro') {
             steps {
                 script{
                   if(date.getDay() == 5){
@@ -28,7 +27,7 @@ pipeline {
             }
         }
       
-      stage('futbol') {
+      stage('chiste_Futbol') {
             steps {
                 script{
                   if(date.getDay() == 1){
@@ -38,7 +37,7 @@ pipeline {
             }
         }
       
-      stage('politica') {
+      stage('chiste_Politica') {
             steps {
                 script{
                   if(date.getDay() == 2){
@@ -48,7 +47,7 @@ pipeline {
             }
         }
       
-      stage('medicos') {
+      stage('chiste_Medicos') {
             steps {
                 script{
                   if(date.getDay() == 3){

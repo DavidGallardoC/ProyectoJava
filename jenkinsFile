@@ -11,6 +11,8 @@ pipeline {
             steps {
                 script{
                   if(date.getDay() == 4){
+                    LocalDate fecha = LocalDate.now()
+                    println 'Hoy es ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
                     println "¿Que es un terapeuta? 1024 Gigapeutas."
                   }                  
                 }

@@ -1,66 +1,64 @@
 import java.text.DateFormat;
-import java.util.Date;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
+import java.util.Date;
 
 Date date = new Date();
 DateFormat dateFormat=new SimpleDateFormat("dd/MM/yyyy");
 def fecha = dateFormat.format(date)
-
 pipeline {
     agent any
 
     stages {
-        stage('chiste_Informaticos') {
+        stage('chiste_informaticos') {
             steps {
                 script{
                   if(date.getDay() == 4){
-                    println "Hoy es " + fecha
-                    println ¿Que es un terapeuta? 1024 Gigapeutas."
+                        println "Hoy es " + fecha
+                        println "¿Cuántos programadores hacen falta para cambiar una bombilla? – Ninguno, porque es un problema de hardware."
                   }                  
                 }
             }
         }  
       
-      stage('chiste_HumorNegro') {
+      stage('chiste_humornegro') {
             steps {
                 script{
                   if(date.getDay() == 5){
-                    println "Hoy es " + fecha
-                    println "Hoy es viernes. Esto es un hombre que se sento en un acha,no te ha echo gracia? Pues el se partio el culo."
+                        println "Hoy es " + fecha
+                        println "Una vez, Batman disparó a un tiovivo y consiguió un tío muerto."
                   }                  
                 }
             }
         }
       
-      stage('chiste_Futbol') {
+      stage('chiste_futbol') {
             steps {
                 script{
-                  if(date.getDay() == 1){ 
-                     println "Hoy es " + fecha
-                    println "Hoy es lunes. Por que Messi no bautiza a su hijo? Para no hacerse Cristiano."
+                  if(date.getDay() == 1){
+                        println "Hoy es " + fecha
+                        println "-¿Cómo se llama el peor jugador japonés? -Nikito Nitoko."
                   }                  
                 }
             }
         }
       
-      stage('chiste_Politica') {
+      stage('chiste_politica') {
             steps {
                 script{
                   if(date.getDay() == 2){
-                   println "Hoy es " + fecha
-                    println "Hoy es miercoles. Y tu mas -Breve resumen de la politica española sobre el partido gobernante y la oposicion."
+                        println "Hoy es " + fecha  
+                        println "«Y tú más» -Breve resumen de la política española sobre el partido gobernante y la oposición."
                   }                  
                 }
             }
         }
       
-      stage('chiste_Medicos') {
+      stage('chiste_medicos') {
             steps {
                 script{
                   if(date.getDay() == 3){
-                   println "Hoy es " + fecha
-                    println "Hoy es miercoles.  Doctor, doctor, ¿que tal ha salido la operacion? - ¡Pero que doctor ni que ocho cuartos! ¡Mire Ud. yo soy San Pedro!"
+                        println "Hoy es " + fecha
+                        println "– Doctor todo el mundo me ignora– Que pase el siguiente por favor."
                   }                  
                 }
             }

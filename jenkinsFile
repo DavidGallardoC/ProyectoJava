@@ -1,9 +1,7 @@
-import java.text.SimpleDateFormat;
 import java.text.DateFormat;
 import java.util.Date;
 import java.time.LocalDate;
-
-Date date = new Date();
+LocalDate fecha = LocalDate.now()
 pipeline {
     agent any
 
@@ -11,8 +9,7 @@ pipeline {
         stage('chiste_Informaticos') {
             steps {
                 script{
-                  if(date.getDay() == 4){
-                    LocalDate fecha = LocalDate.now()
+                  if(fecha.getDayOfWeek() == 'THURSDAY'){
                     println 'Fecha actual ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
                     println "Hoy es jueves. ¿Que es un terapeuta? 1024 Gigapeutas."
                   }                  
@@ -23,8 +20,7 @@ pipeline {
       stage('chiste_HumorNegro') {
             steps {
                 script{
-                  if(date.getDay() == 5){
-                    LocalDate fecha = LocalDate.now()
+                  if(fecha.getDayOfWeek() == 'FRIDAY'){
                     println 'Fecha actual ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
                     println "Hoy es viernes. Esto es un hombre que se sento en un acha,no te ha echo gracia? Pues el se partio el culo."
                   }                  
@@ -35,8 +31,7 @@ pipeline {
       stage('chiste_Futbol') {
             steps {
                 script{
-                  if(date.getDay() == 1){
-                    LocalDate fecha = LocalDate.now()
+                  if(fecha.getDayOfWeek() == 'MONDAY'){ 
                     println 'Fecha actual ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
                     println "Hoy es lunes. Por que Messi no bautiza a su hijo? Para no hacerse Cristiano."
                   }                  
@@ -47,8 +42,7 @@ pipeline {
       stage('chiste_Politica') {
             steps {
                 script{
-                  if(date.getDay() == 2){
-                    LocalDate fecha = LocalDate.now()
+                  if(fecha.getDayOfWeek() == 'TUESDAY'){
                     println 'Fecha actual ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
                     println "Hoy es miercoles. Y tu mas -Breve resumen de la politica española sobre el partido gobernante y la oposicion."
                   }                  
@@ -59,8 +53,7 @@ pipeline {
       stage('chiste_Medicos') {
             steps {
                 script{
-                  if(date.getDay() == 3){
-                    LocalDate fecha = LocalDate.now()
+                  if(fecha.getDayOfWeek() == 'WEDNESDAY'){
                     println 'Fecha actual ' + fecha.getDayOfMonth() + "/" + fecha.getMonthValue() + "/" + fecha.getYear()
                     println "Hoy es miercoles.  Doctor, doctor, ¿que tal ha salido la operacion? - ¡Pero que doctor ni que ocho cuartos! ¡Mire Ud. yo soy San Pedro!"
                   }                  

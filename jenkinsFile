@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script{
                   if(date.getDay() == 4){
-                    println "Chiste de informático"
+                    println "¿Qué es un terapeuta? – 1024 Gigapeutas."
                   }                  
                 }
             }
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script{
                   if(date.getDay() == 5){
-                    println "Chiste de humor negro"
+                    println "Esto es un hombre que se sento en un acha,no te ha echo gracia? Pues el se partio el culo."
                   }                  
                 }
             }
@@ -31,7 +31,7 @@ pipeline {
             steps {
                 script{
                   if(date.getDay() == 1){
-                    println "Chiste de fútbol"
+                    println "Por que Messi no bautiza a su hijo? Para no hacerse Cristiano."
                   }                  
                 }
             }
@@ -41,7 +41,7 @@ pipeline {
             steps {
                 script{
                   if(date.getDay() == 2){
-                    println "Chiste de politica"
+                    println "«Y tu mas» -Breve resumen de la politica española sobre el partido gobernante y la oposicion."
                   }                  
                 }
             }
@@ -51,7 +51,7 @@ pipeline {
             steps {
                 script{
                   if(date.getDay() == 3){
-                    println "Chiste de médicos"
+                    println "- Doctor, doctor, ¿que tal ha salido la operacion? - ¡Pero que doctor ni que ocho cuartos! ¡Mire Ud. yo soy San Pedro!"
                   }                  
                 }
             }

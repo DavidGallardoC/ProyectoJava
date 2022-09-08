@@ -41,7 +41,7 @@ public class Principal {
 			}
 			sc.close();
 			bw.close();
-			System.out.println("\nArchivo de texto generado correctamente.");
+			System.out.println("\nArchivo de texto no existe, se genera uno nuevo.");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -57,7 +57,7 @@ public class Principal {
 			}
 			sc.close();
 		} catch (FileNotFoundException e) {
-			System.out.println("Archivo no encontrado.");
+			System.out.println("Archivo no existe.");
 		}
 		
 		

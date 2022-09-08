@@ -15,7 +15,7 @@ pipeline {
                 script{
                   if(date.getDay() == 4){
                         println "Hoy es " + fecha
-                        println "¿Que es un terapeuta? – 1024 Gigapeutas."
+                        println "Que es un terapeuta?  1024 Gigapeutas."
                   }                  
                 }
             }

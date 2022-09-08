@@ -1,16 +1,10 @@
-pipeline
-{
-	agent any
-	
-	stages
-	{
-	stage('Pre build')
-	{
-	steps{
-		echo 'Hola Mundo'
-	}
-
-
-	}
-}
+pipeline {
+   agent any
+   stages {
+      stage('Hello') {
+         steps {
+             echo "Hola Mundo"
+         }
+      }
+   }
 }

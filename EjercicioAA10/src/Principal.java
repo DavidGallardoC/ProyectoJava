@@ -1,4 +1,5 @@
 import java.net.HttpURLConnection;
+import org.json.*;
 import java.net.URL;
 import java.util.Scanner;
 
@@ -8,9 +9,18 @@ public class Principal {
 		
 		Scanner entrada = new Scanner(System.in);
 		
+		String nombre;
+		
 		System.out.println("Introduce tu nombre: ");
 		
-		String nombre = entrada.nextLine();
+		 nombre = entrada.nextLine();
+		
+		while(nombre.isEmpty()) {
+			
+			System.out.println("Inserte su nombre");
+			 nombre = entrada.nextLine();
+			
+		}
 		
 		System.out.println("Bienvenido " + nombre + " te muestro el clima actual en España por provincias");
 		
@@ -36,10 +46,19 @@ public class Principal {
 				while(sc.hasNext())
 				{
 					informacionString.append(sc.nextLine());
+					
 				}
 				sc.close();
-				System.out.print(informacionString);
-			}
+				entrada.close();
+				
+				JSONObject job = null;
+				try {
+					job = new JSONObject(informacionString.toString());
+					System.out.println(job.toString(2));
+				} catch (JSONException e) {
+					System.err.println("Error JSONException: " + e);
+				}
+			}		 	
 			
 		}
 		catch (Exception e)
@@ -47,7 +66,9 @@ public class Principal {
 			e.printStackTrace();
 		}
 		
-		entrada.close();
+	
+		
+		
 
 	}
 

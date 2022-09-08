@@ -63,7 +63,7 @@ public class Principal {
 		
 		//Generación del Jenkins
 		
-		File jenkins = new File("Jenkinsfile.txt");
+		File jenkins = new File("jenkinsFile.txt");
 		try {
 			jenkins.createNewFile();
 			FileWriter fw = new FileWriter(jenkins);

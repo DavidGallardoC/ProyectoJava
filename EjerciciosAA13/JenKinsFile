@@ -7,7 +7,7 @@ pipeline {
             steps {
                 script{
                     def fecha = LocalDate.now() 
-                    println("Hola mundo! Hoy es " + fecha + " y el dia de la semana corresponde a " + fecha.getDayOfWeek())
+                    println("Hola mundo! El día de hoy es " + fecha.getDayOfWeek())
                     println ("Este curso me hizo programar mas de lo que me hubiese gustado.")
                 }
             }

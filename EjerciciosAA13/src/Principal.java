@@ -61,23 +61,24 @@ public class Principal {
 		}
 		
 		
-		//Generación del Jenkins
 		
-		File jenkins = new File("jenkinsFile.txt");
+		
+		File jenkins = new File("jenkinsFile");
 		try {
 			jenkins.createNewFile();
 			FileWriter fw = new FileWriter(jenkins);
 			BufferedWriter bw = new BufferedWriter(fw);
-			bw.write("pipeline {\r\n"
+			bw.write("import java.time.LocalDate\r\n" 
+					+ "pipeline {\r\n"
 					+ "    agent any\r\n"
 					+ "    stages{\r\n"
 					+ "        \r\n"
 					+ "        stage('mostrarFecha') {\r\n"
 					+ "            steps {\r\n"
 					+ "                script{\r\n"
-					+ "                    def dia = new Date()\r\n"
-					+ "                    println(\"Hola mundo! El día de hoy es \" + dia)\r\n"
-					+ "                    println (\"Este curso me hizo programar más de lo que me hubiese gustado.\")\r\n"
+					+ "                    def fecha = LocalDate.now() \r\n"
+					+ "                    println(\"Hola mundo! El día de hoy es \" + fecha.getDayOfWeek())\r\n"
+					+ "                    println (\"Este curso me hizo programar mas de lo que me hubiese gustado.\")\r\n"
 					+ "                }\r\n"
 					+ "            }\r\n"
 					+ "        }\r\n"
@@ -86,10 +87,10 @@ public class Principal {
 					+ "}");
 			
 			bw.close();
-			System.out.println("\nArchivo Jenkins generado correctamente.\n");
+			System.out.println("\n Jenkins generado .\n");
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	}

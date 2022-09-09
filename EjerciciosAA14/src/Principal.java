@@ -14,17 +14,17 @@ public class Principal {
 		//se ve si al intentar crearlo, se puede por la temperatura
 		boolean temperatura_correcta = chocolate_prueba.produccion_activa();
 		
-		//en caso de que se pueda, se añade ESE y los demás chocolates
+		//en caso de que se pueda, se aÃ±ade ESE y los demÃ¡s chocolates
 		if (temperatura_correcta)
 	
 		{
 			Chocolate c1 = new Chocolate("Chocolate",200,1500,"Chocolate Negro");
 			Chocolate c2 = new Chocolate("Chocolate",200,1200,"Chocolate con almendras");
-			Chocolate c3 = new Chocolate("Chocolate",200,1300,"Chocolate con castañas de caju");
+			Chocolate c3 = new Chocolate("Chocolate",200,1300,"Chocolate con castaÃ±as de caju");
 			Chocolate c4 = new Chocolate("Chocolate",200,100,"Chocolate en rama");
 			Chocolate c5 = new Chocolate("Chocolate",200,1500,"Chocolate con 70% de cacao");
 		    try{
-				System.out.println("Generación de los chocolates en txt");
+				System.out.println("GeneraciÃ³n de los chocolates en txt");
 				//Abro stream, crea el fichero si no existe
 				File documento = new File("salida" + LocalDate.now() + ".txt");
 				if(documento.exists()) {
@@ -61,13 +61,24 @@ public class Principal {
 				//manipulo jenkins en git con pipeline
 				FileWriter fw = new FileWriter(jenkins);
 				BufferedWriter bw = new BufferedWriter(fw);
-				bw.write(chocolate_prueba.toString());
-				bw.write(c1.toString());
-				bw.write(c1.toString());
-				bw.write(c2.toString());
-				bw.write(c3.toString());
-				bw.write(c4.toString());
-				bw.write(c5.toString());
+				bw.write("import java.time.LocalDate\r\n" 
+							+ "pipeline {\r\n"
+							+ "    agent any\r\n"
+							+ "    stages{\r\n"
+							+ "        \r\n"
+							+ "        stage('chocolate') {\r\n"
+							+ "            steps {\r\n"
+							+ "                script{\r\n"
+							+ "                    def fecha = LocalDate.now() \r\n"
+							+ "                    println " + chocolate_prueba.toString() + c1.toString() + c2.toString() + c3.toString() 
+							+                                c4.toString() + c5.toString() 
+							+ "                }\r\n"
+							+ "            }\r\n"
+							+ "        }\r\n"
+							+ "            \r\n"
+							+ "    }\r\n"
+							+ "}");
+				
 				
 				
 				

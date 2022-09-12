@@ -5,7 +5,7 @@ pipeline{
 		stage("holaMundo"){
 			steps{
 				script{
-					println[A Coruña               A Coruña, Alacant               Alacant, Albacete               Albacete, Almería               Almería, Araba               Araba, Asturias               Asturias, Badajoz     Badajoz, Barcelona               Barcelona, Bizkaia               Bizkaia, Burgos               Burgos, Cantabria               Cantabria]
+					println("[A Coruña               A Coruña, Alacant               Alacant, Albacete               Albacete, Almería               Almería, Araba               Araba, Asturias               Asturias, Badajoz     Badajoz, Barcelona               Barcelona, Bizkaia               Bizkaia, Burgos               Burgos, Cantabria               Cantabria"])
 				}
 			}
 		}

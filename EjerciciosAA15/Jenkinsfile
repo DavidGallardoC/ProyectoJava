@@ -5,59 +5,7 @@ pipeline{
 		stage("holaMundo"){
 			steps{
 				script{
-					println[A Coruña               A Coruña
-, Alacant               Alacant
-, Albacete               Albacete
-, Almería               Almería
-, Araba               Araba
-, Asturias               Asturias
-, Badajoz               Badajoz
-, Barcelona               Barcelona
-, Bizkaia               Bizkaia
-, Burgos               Burgos
-, Cantabria               Cantabria
-, Castelló               Castelló
-, Ceuta               Ceuta
-, Ciudad Real               Ciudad Real
-, Cuenca               Cuenca
-, Cáceres               Cáceres
-, Cádiz               Cádiz
-, Córdoba               Córdoba
-, Gipuzcoa               Gipuzcoa
-, Girona               Girona
-, Granada               Granada
-, Guadalajara               Guadalajara
-, Huelva               Huelva
-, Huesca               Huesca
-, Illes Balears               Illes Balears
-, Jaén               Jaén
-, La Rioja               La Rioja
-, Las Palmas               Las Palmas
-, León               León
-, Lleida               Lleida
-, Lugo               Lugo
-, Madrid               Madrid
-, Melilla               Melilla
-, Murcia               Murcia
-, Málaga               Málaga
-, Navarra               Navarra
-, Ourense               Ourense
-, Palencia               Palencia
-, Pontevedra               Pontevedra
-, Salamanca               Salamanca
-, Santa Cruz de Tenerife               Santa Cruz de Tenerife
-, Segovia               Segovia
-, Sevilla               Sevilla
-, Soria               Soria
-, Tarragona               Tarragona
-, Teruel               Teruel
-, Toledo               Toledo
-, Valladolid               Valladolid
-, València               València
-, Zamora               Zamora
-, Zaragoza               Zaragoza
-, Ávila               Ávila
-]
+					println[A Coruña               A Coruña, Alacant               Alacant, Albacete               Albacete, Almería               Almería, Araba               Araba, Asturias               Asturias, Badajoz     Badajoz, Barcelona               Barcelona, Bizkaia               Bizkaia, Burgos               Burgos, Cantabria               Cantabria]
 				}
 			}
 		}

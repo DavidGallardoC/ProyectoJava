@@ -1,0 +1,7 @@
+PAIS: EspaÃ±a
+Capital: Madrid
+Continente: Europa
+Habitantes: 47350000
+Clima Predominante: Calido
+Salario Minimo: 105000
+ PCI:4.97175003E11
